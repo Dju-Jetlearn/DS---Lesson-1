@@ -16,10 +16,13 @@ print(type(name))
 
 #Creating an array using np.array
 
-a = np.array([10, 20, 30])# + 100, see next comment below
+#Arrays can perform arithmetic operation
+
+a = np.array([10, 20, 30]) + 100
 print(type(a))
 
-#Arrays can perform arithmetic operation
+#or
+
 a = a + 100
 print(a)
 
@@ -48,7 +51,7 @@ print(f)
 
 # All the minimini brackets need to have the same number of values
 
-# g = np.array([[1,2],[3]])
+# g = np.array([[1,2],[3]]) THIS IS BAD
 # print(g)
 
 # Array Specs
@@ -61,3 +64,50 @@ print("Array Dimension:",h.ndim) # 1D, 2D, 3D, etcetera
 print("Number of rows & columns:",h.shape) # number of rows and columns
 print("Number of elements:",h.size) # number of elements
 print("Array size:",h.nbytes,"bytes") # Size in bytes, eg. 4 bytes
+
+i = np.arange(1,101)
+print(i)
+
+j = np.arange(1,100,2)
+print(j)
+
+k = np.arange(2,101,2)
+print(k)
+
+l = np.random.randint(1,10)
+print(l)
+
+m = np.random.permutation(np.arange(1,11))
+print("permutation : ", m)
+
+n = np.random.rand(1,20) # generates 20 random numbers from 0 to 1
+print(n)
+
+o = np.arange(1,26).reshape(5,5) # 5 no.1 = rows, 5 no.2 = columns
+print(o)
+
+p = np.arange(1,37).reshape(1,36)
+q = np.arange(1,37).reshape(2,18)
+r = np.arange(1,37).reshape(3,12)
+s = np.arange(1,37).reshape(4,9)
+t = np.arange(1,37).reshape(6,6)
+u = np.arange(1,37).reshape(9,4)
+v = np.arange(1,37).reshape(12,3)
+w = np.arange(1,37).reshape(18,2)
+x = np.arange(1,37).reshape(36,1)
+
+print(p)
+print(q)
+print(r)
+print(s)
+print(t)
+print(u)
+print(v)
+print(w)
+print(x)
+
+y = np.random.permutation(np.arange(1,101))
+print(y)
+
+z = np.sort(y)
+print(z)
